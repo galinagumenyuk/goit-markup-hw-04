@@ -137,6 +137,7 @@ img {
 .item-contacts + .item-contacts {
   margin-left: 50px;
 }
+
 .header-contacts {
   color: var(--secondary-text-coloure);
   font-weight: 500;
@@ -148,8 +149,17 @@ img {
 .header-contacts:focus {
   color: var(--accent-coloure);
 }
+.header-icon {
+  fill: #757575;
+  margin-right: 10px;
+}
+.header-icon:focus,
+.header-icon:hover {
+  fill: var(--accent-coloure);
+}
 
 /* Основной блок студии */
+
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -224,29 +234,16 @@ img {
 .list-features-item + .list-features-item {
   margin-left: 30px;
 }
-
-.list-features-item::before {
-  content: "";
+.icon-background {
   display: block;
-  height: 120px;
-  background-size: 70px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
 
   margin-bottom: 30px;
-}
-.list-features-item:nth-child(1)::before {
-  background-image: url(../images/icons/antenna1.svg);
-}
-.list-features-item:nth-child(2)::before {
-  background-image: url(../images/icons/clock1.svg);
-}
-.list-features-item:nth-child(3)::before {
-  background-image: url(../images/icons/diagram1.svg);
-}
-.list-features-item:nth-child(4)::before {
-  background-image: url(../images/icons/astronaut1.svg);
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .features .subtitle {
@@ -309,6 +306,35 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-list-social-media {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+.team-item-social-media + .team-item-social-media {
+  margin-left: 10px;
+}
+
+.wrapper-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+}
+.wrapper-social-link:hover,
+.wrapper-social-link:focus {
+  background-color: var(--accent-coloure);
+}
+
+.team-symbol-link {
+  fill: #afb1b8;
+}
+.team-symbol-link:hover,
+.team-symbol-link:focus {
+  fill: #ffffff;
 }
 
 /* Основной блок портфолио */
