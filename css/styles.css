@@ -455,11 +455,13 @@ img {
 /* футер */
 .footer {
   background-color: #2f303a;
+  display: flex;
 }
 .footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -477,5 +479,41 @@ img {
   color: #ffffff;
 }
 .footer .logo-accent {
+  color: #ffffff;
+}
+
+.footer-links {
+  margin-left: 70px;
+}
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-social-border {
+  display: block;
+  padding: 12px;
+  border: 0px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #44454e;
+}
+.footer-social-border:hover,
+.footer-social-border:focus {
+  background-color: var(--accent-coloure);
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-links > .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
   color: #ffffff;
 }
