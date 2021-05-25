@@ -25,8 +25,16 @@
                 </ul>
             </nav>
             <ul class="list-contacts">
-                <li class="item-contacts"><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a></li>
-                <li class="item-contacts"><a href="tel:+380961111111" class="header-contacts"> +38 096 111 11 11 </a></li>
+                <li class="item-contacts"><a href="mailto:info@devstudio.com" class="header-contacts">
+                        <svg class="header-icon" width="16" height="12">
+                            <use href="./images/icons/symbol-defs.svg#icon-envelope-opt"></use>
+                        </svg> info@devstudio.com</a>
+                </li>
+                <li class="item-contacts"><a href="tel:+380961111111" class="header-contacts">
+                        <svg class="header-icon" width="10" height="16">
+                            <use href="./images/icons/symbol-defs.svg#icon-smartphone-opt"></use>
+                        </svg> +38 096 111 11 11 </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -96,18 +104,46 @@
     <!--Подвал-->
 <footer class="footer" id="contacts">
     <div class="container">
-        <a href="" class="logo">Web<span class="logo-accent">Studio</span></a>
-        <address>
-            <ul>
-                <li>
-                    <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+        <div>
+            <a href="" class="logo">Web<span class="logo-accent">Studio</span></a>
+            <address>
+                <ul>
+                    <li>
+                        <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+                    </li>
+                    <li><a href="mailto:info@example.com" class="footer-contacts">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="footer-contacts">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-links">
+            <p class="text">присоединяйтесь</p>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="footer-social-border" href=""> <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./images/icons/symbol-defs.svg#icon-instagram-opt"></use>
+                        </svg> </a>
                 </li>
-                <li><a href="mailto:info@example.com" class="footer-contacts">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="footer-contacts">+38 099 111 11 11</a></li>
+                <li class="footer-social-item">
+                    <a class="footer-social-border" href=""> <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./images/icons/symbol-defs.svg#icon-twitter-opt"></use>
+                        </svg> </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="footer-social-border" href=""> <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./images/icons/symbol-defs.svg#icon-facebook-opt"></use>
+                        </svg> </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="footer-social-border" href=""> <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./images/icons/symbol-defs.svg#icon-linkedin-opt"></use>
+                        </svg> </a>
+                </li>
             </ul>
-        </address>
+        </div>
     </div>
 </footer>
+</body>
 </body>
 
 </html>

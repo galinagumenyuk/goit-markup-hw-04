@@ -213,6 +213,11 @@ img {
   display: inline-block;
   min-width: 200px;
   text-align: center;
+  border-color: transparent;
+}
+.hero-button:focus,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 .section {
   padding-top: 94px;
@@ -423,10 +428,6 @@ img {
   margin-bottom: 0px;
 }
 
-/* .img-portfolio {
-  margin-bottom: 20px;
-} */
-
 .wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -453,13 +454,14 @@ img {
 }
 
 /* футер */
+
 .footer {
   background-color: #2f303a;
-  display: flex;
 }
 .footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .footer-contacts {
