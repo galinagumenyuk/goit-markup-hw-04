@@ -337,6 +337,41 @@ img {
   fill: #ffffff;
 }
 
+/* Блок Наши клиенты */
+
+.title-clients {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #212121;
+}
+.list-clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+.clients-border {
+  display: block;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+}
+.clients-border:focus,
+.clients-border:hover {
+  border-color: var(--accent-coloure);
+}
+.clients-icon:focus,
+.clients-icon:hover {
+  fill: var(--accent-coloure);
+}
+
 /* Основной блок портфолио */
 .portfolio-list-button {
   display: flex;
