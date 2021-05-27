@@ -48,6 +48,8 @@ h3 {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Контейнер */
@@ -133,7 +135,6 @@ img {
 .list-contacts {
   display: flex;
   margin-left: auto;
-  align-items: baseline;
 }
 .item-contacts + .item-contacts {
   margin-left: 50px;
@@ -145,6 +146,8 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 .header-contacts:hover,
 .header-contacts:focus {
@@ -199,7 +202,6 @@ img {
   color: #ffffff;
 
   width: 696px;
-  height: 120px;
 }
 .hero-button {
   font-weight: 700;
@@ -338,9 +340,8 @@ img {
 .team-symbol-link {
   fill: #afb1b8;
 }
-.team-symbol-link:hover,
-.team-symbol-link:focus {
-  fill: #ffffff;
+.wrapper-social-link:hover .team-symbol-link {
+  fill: #fff;
 }
 
 /* Блок Наши клиенты */
@@ -373,8 +374,8 @@ img {
 .clients-border:hover {
   border-color: var(--accent-coloure);
 }
-.clients-icon:focus,
-.clients-icon:hover {
+.clients-border:hover .clients-icon,
+.clients-border:focus .clients-icon {
   fill: var(--accent-coloure);
 }
 
